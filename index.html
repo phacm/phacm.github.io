@@ -33,10 +33,7 @@
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
           <a href="#workflow">Workflow</a>
           <a href="#capabilities">Capabilities</a>
-          <a href="#architecture">Architecture</a>
-          <a class="nav-cta" href="https://github.com/phacm/omaknife" target="_blank" rel="noreferrer">
-            View on GitHub <span aria-hidden="true">↗</span>
-          </a>
+          <a class="nav-cta" href="#capabilities">Product overview</a>
         </nav>
       </div>
     </header>
@@ -51,13 +48,10 @@
             objective, terminal, file, and quota in view.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="https://github.com/phacm/omaknife/releases/latest" target="_blank" rel="noreferrer">
-              Download latest <span aria-hidden="true">↓</span>
-            </a>
-            <a class="button secondary" href="#workflow">See the workflow <span aria-hidden="true">→</span></a>
+            <a class="button primary" href="#workflow">See the workflow <span aria-hidden="true">→</span></a>
           </div>
           <div class="platform-line" aria-label="Supported platforms and license">
-            <span>macOS</span><i></i><span>Linux</span><i></i><span>MIT licensed</span>
+            <span>macOS</span><i></i><span>Linux</span><i></i><span>Proprietary software</span>
           </div>
         </div>
 
@@ -78,7 +72,7 @@
               <header><span><i></i>01 / CLAUDE CODE</span><b>SPEC</b></header>
               <div class="terminal-copy">
                 <p><span>›</span> Reading product requirements…</p>
-                <p class="muted">architecture.md&nbsp;&nbsp; +84 −12</p>
+                <p class="muted">launch-plan.md&nbsp;&nbsp; updated</p>
                 <p><span>✓</span> Interface contract complete</p>
                 <p class="cursor-line">Reviewing failure modes <i></i></p>
               </div>
@@ -147,7 +141,7 @@
           </li>
           <li class="reveal">
             <span class="step-no">03</span>
-            <div><h3>Dispatch once</h3><p>Broadcast the shared objective plus a focused addendum for architecture, tests, implementation, or verification.</p></div>
+            <div><h3>Dispatch once</h3><p>Broadcast the shared objective plus a focused addendum for planning, validation, execution, or verification.</p></div>
             <span class="step-icon send" aria-hidden="true">↗</span>
           </li>
         </ol>
@@ -174,7 +168,7 @@
           <article class="feature feature-editor reveal">
             <div class="feature-index">02 / FILES</div>
             <h3>Edit without collapsing the deck.</h3>
-            <p>Open a floating Monaco editor, preview Markdown, save in place, or jump to your default desktop app.</p>
+            <p>Open a floating editor, preview documents, save in place, or jump to your default desktop app.</p>
             <div class="editor-card" aria-hidden="true">
               <header><span>src/session.rs</span><b>↗ Open</b></header>
               <pre><i>48</i> <span>pub fn</span> stop(&amp;self) {
@@ -207,53 +201,12 @@
         </div>
       </section>
 
-      <section id="architecture" class="architecture section-pad">
-        <div class="architecture-copy reveal">
-          <p class="eyebrow"><span></span> Local by design</p>
-          <h2>A thin interface over the tools you already trust.</h2>
-          <p>
-            OmaKnife doesn’t invent a separate execution world. It coordinates your installed
-            CLIs, your filesystem, and your shell from a compact Tauri desktop application.
-          </p>
-          <div class="stack-pills" aria-label="Technology stack">
-            <span>Rust</span><span>Tauri v2</span><span>React 19</span><span>xterm.js</span><span>Monaco</span>
-          </div>
-        </div>
-        <div class="architecture-map reveal" aria-label="OmaKnife architecture diagram">
-          <div class="map-layer map-ui"><span>CONTROL SURFACE</span><b>React + Monaco + xterm.js</b></div>
-          <div class="map-connector" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="map-layer map-host"><span>DESKTOP HOST</span><b>Tauri IPC + workspace guard</b></div>
-          <div class="map-connector" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="map-bottom">
-            <div><span>PTY ENGINE</span><b>8ms / 64KiB</b></div>
-            <div><span>LOCAL PROJECT</span><b>Your files</b></div>
-            <div><span>AI CLIs</span><b>Your agents</b></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="install section-pad">
-        <div class="install-card reveal">
-          <div>
-            <p class="eyebrow"><span></span> Start from source</p>
-            <h2>Bring your own agents.<br />Keep your own workflow.</h2>
-          </div>
-          <div class="command-box">
-            <code>git clone https://github.com/phacm/omaknife.git</code>
-            <button type="button" data-copy="git clone https://github.com/phacm/omaknife.git" aria-label="Copy clone command">Copy</button>
-          </div>
-          <div class="install-actions">
-            <a class="button primary" href="https://github.com/phacm/omaknife" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/phacm/omaknife/blob/main/quick-start-omaknife.md" target="_blank" rel="noreferrer">Read the quick start <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer section-pad">
       <a class="brand" href="#top"><img src="assets/icon.png" alt="" width="34" height="34" /><span>OmaKnife</span></a>
       <p>Four agents. One workspace. Built for local AI engineering.</p>
-      <div><a href="https://github.com/phacm/omaknife" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/phacm/omaknife/releases" target="_blank" rel="noreferrer">Releases</a><span>MIT © 2026</span></div>
+      <div><span>macOS</span><span>Linux</span><span>© 2026 OmaKnife. All rights reserved.</span></div>
     </footer>
   </body>
 </html>
