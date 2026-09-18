@@ -1,9 +1,8 @@
-# hcode
+# OmaKnife at hcode.works
 
-The public hcode startup landing page is a dependency-free static one-pager.
-
-GitHub Pages deploys automatically from `main` using the workflow in
-`.github/workflows/deploy-pages.yml`.
+The default site for [hcode.works](https://hcode.works) is the public OmaKnife
+one-page website. It is a dependency-free static site published from `main`
+through GitHub Pages.
 
 ## Local preview
 
